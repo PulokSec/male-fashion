@@ -13,6 +13,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Male fashion. Clothing store",
   description: "Modern e-commerce store with Next.js",
+  icons: {
+    icon: '/favicon.ico', // /public path
+  },
 }
 
 export default function RootLayout({
