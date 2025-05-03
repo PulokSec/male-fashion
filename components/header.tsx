@@ -251,12 +251,14 @@ export default function Header() {
             </Link>
 
             {activeMenu === item && (
-              <div className="absolute left-0 mt-2 w-48 bg-white shadow-md z-50">
+              <div className="absolute left-0 mt-2w-48 z-50">
+              <div className="mt-2 w-48 bg-white shadow-md">
                 {menuItems[item as keyof typeof menuItems].map((subItem) => (
                   <Link key={subItem.name} href={subItem.href} className="block px-4 py-2 text-sm hover:bg-gray-100">
                     {subItem.name}
                   </Link>
                 ))}
+                </div>
               </div>
             )}
           </div>
